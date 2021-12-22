@@ -1,0 +1,27 @@
+<?php
+$primaryTextColor = '#000';
+$secondaryTextColor = '#fff';
+$tertiaryTextColor = '#555';
+$primaryBGColor = '#fff';
+$secondaryBGColor = '#ccc';
+$tertiaryBGColor = '#000';
+$primaryTextSize = '10'; //pixels
+?>
+body {
+ color: <?=$primaryTextColor?>;
+ background: <?=$primaryBGColor?>;
+ font-size: <?=$primaryTextSize?>px;
+}
+div#content {
+ background: <?=$secondaryBGColor?>;
+ font-size: <? echo 1.1*$primaryTextSize ?>px;
+}
+div#sidebar {
+ color:  <?=$secondaryTextColor?>;
+ background: <?=$tertiaryBGColor?>;
+ font-size: <?=$primaryTextSize;?>px;
+}
+div#footer {
+ color: <?=$tertiaryTextColor?>;
+ background: <?=$secondaryBGColor?>;
+}
